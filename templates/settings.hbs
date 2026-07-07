@@ -1,0 +1,52 @@
+<section class="ncst-settings">
+    <p class="ncst-description">{{localize "NCST.Settings.Description"}}</p>
+
+    <div class="ncst-toolbar">
+        <div class="ncst-filter">
+            <i class="fas fa-search"></i>
+            <input type="text" class="ncst-filter-input" placeholder="{{localize "NCST.Settings.FilterPlaceholder"}}" />
+        </div>
+        <div class="ncst-actions">
+            <button type="button" data-action="excludeAll">
+                <i class="fas fa-eye-slash"></i> {{localize "NCST.Settings.ExcludeAll"}}
+            </button>
+            <button type="button" data-action="includeAll">
+                <i class="fas fa-eye"></i> {{localize "NCST.Settings.IncludeAll"}}
+            </button>
+        </div>
+    </div>
+
+    <div class="ncst-scroll-area">
+        {{#if groups.length}}
+            {{#each groups}}
+            <fieldset class="ncst-group">
+                <legend><i class="{{icon}}"></i> {{label}}</legend>
+                <div class="ncst-pack-list">
+                    {{#each packs}}
+                    <div class="ncst-pack-entry">
+                        <label class="ncst-pack-label">
+                            <input type="checkbox" data-pack-id="{{id}}" {{#if excluded}}checked{{/if}} />
+                            <span class="ncst-pack-info">
+                                <span class="ncst-pack-name">{{label}}</span>
+                                {{#if folderPath}}
+                                <span class="ncst-pack-folder"><i class="fas fa-folder-open"></i> {{folderPath}}</span>
+                                {{/if}}
+                            </span>
+                            <span class="ncst-pack-type">{{type}}</span>
+                        </label>
+                    </div>
+                    {{/each}}
+                </div>
+            </fieldset>
+            {{/each}}
+        {{else}}
+            <p class="ncst-no-packs">{{localize "NCST.Settings.NoPacks"}}</p>
+        {{/if}}
+    </div>
+
+    <footer class="form-footer">
+        <button type="submit" class="ncst-save-btn">
+            <i class="fas fa-save"></i> {{localize "NCST.Settings.Save"}}
+        </button>
+    </footer>
+</section>

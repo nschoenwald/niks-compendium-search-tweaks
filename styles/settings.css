@@ -1,0 +1,181 @@
+/* ===================================================
+   Nik's Compendium Search Tweaks — Settings Form
+   =================================================== */
+
+/* Root layout: flex column so the scroll area fills available space */
+.ncst-settings {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Description text */
+.ncst-description {
+    flex-shrink: 0;
+    font-size: 0.9em;
+    color: var(--color-text-dark-secondary, #666);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+/* Toolbar: filter input + bulk action buttons */
+.ncst-toolbar {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.ncst-filter {
+    flex: 1 1 200px;
+    position: relative;
+}
+
+.ncst-filter > i {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 0.8em;
+    color: var(--color-text-dark-inactive, #999);
+    pointer-events: none;
+}
+
+.ncst-filter-input {
+    width: 100%;
+    padding-left: 1.75rem;
+}
+
+.ncst-actions {
+    display: flex;
+    gap: 0.25rem;
+    flex-shrink: 0;
+}
+
+.ncst-actions button {
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+
+/* Scrollable pack list area */
+.ncst-scroll-area {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0;
+    padding-right: 0.25rem;
+}
+
+/* Pack groups */
+.ncst-group {
+    border: 1px solid var(--color-border-light-2, #ccc);
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.ncst-group legend {
+    font-weight: bold;
+    font-size: 0.95em;
+    padding: 0 0.4rem;
+}
+
+.ncst-group legend i {
+    margin-right: 0.25rem;
+    opacity: 0.7;
+}
+
+/* Pack list */
+.ncst-pack-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+/* Individual pack entry */
+.ncst-pack-entry {
+    padding: 0.2rem 0.25rem;
+    border-radius: 3px;
+    transition: background-color 0.1s ease;
+}
+
+.ncst-pack-entry:hover {
+    background-color: var(--color-hover-bg, rgba(0, 0, 0, 0.05));
+}
+
+.ncst-pack-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.ncst-pack-label input[type="checkbox"] {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+/* Pack info: name + folder breadcrumb stacked vertically */
+.ncst-pack-info {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 0.05rem;
+}
+
+.ncst-pack-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Folder breadcrumb */
+.ncst-pack-folder {
+    font-size: 0.75em;
+    color: var(--color-text-dark-inactive, #888);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ncst-pack-folder i {
+    margin-right: 0.2rem;
+    font-size: 0.9em;
+}
+
+.ncst-pack-type {
+    flex-shrink: 0;
+    font-size: 0.8em;
+    color: var(--color-text-dark-inactive, #888);
+    font-style: italic;
+    align-self: flex-start;
+    margin-top: 0.1rem;
+}
+
+/* Checked = excluded — dim the label to indicate exclusion */
+.ncst-pack-label:has(input:checked) .ncst-pack-name {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* No packs message */
+.ncst-no-packs {
+    text-align: center;
+    color: var(--color-text-dark-inactive, #999);
+    font-style: italic;
+    padding: 2rem 0;
+}
+
+/* Form footer — pinned at bottom */
+.ncst-settings .form-footer {
+    flex-shrink: 0;
+    padding-top: 0.5rem;
+}
+
+.ncst-save-btn {
+    width: 100%;
+}

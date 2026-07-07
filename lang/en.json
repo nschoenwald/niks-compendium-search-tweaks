@@ -1,0 +1,24 @@
+{
+  "NCST": {
+    "Settings": {
+      "Title": "Compendium Search Exclusions",
+      "Description": "Check the compendium packs you want to exclude from the sidebar content search. Excluded packs will still appear in the sidebar normally, but their contents will not be included in search results.",
+      "Configure": {
+        "Name": "Configure Search Exclusions",
+        "Label": "Configure",
+        "Hint": "Choose which compendium packs are excluded from the sidebar content search."
+      },
+      "FilterPlaceholder": "Filter packs…",
+      "ExcludeAll": "Exclude All",
+      "IncludeAll": "Include All",
+      "Save": "Save Changes",
+      "Saved": "Compendium search exclusions saved.",
+      "Group": {
+        "System": "System",
+        "Module": "Module",
+        "World": "World Compendiums"
+      },
+      "NoPacks": "No compendium packs are currently available."
+    }
+  }
+}
