@@ -4,7 +4,7 @@
   "description": "Allows GMs to configure which compendium packs are excluded from the native V14 sidebar content search.",
   "url": "https://github.com/nschoenwald/niks-compendium-search-tweaks",
   "manifest": "https://github.com/nschoenwald/niks-compendium-search-tweaks/releases/latest/download/module.json",
-  "download": "https://github.com/nschoenwald/niks-compendium-search-tweaks/releases/download/v14.0.0/niks-compendium-search-tweaks-v14.0.0.zip",
+  "download": "https://github.com/nschoenwald/niks-compendium-search-tweaks/releases/download/v14.0.0/module.zip",
   "version": "14.0.0",
   "compatibility": {
     "minimum": "14",
