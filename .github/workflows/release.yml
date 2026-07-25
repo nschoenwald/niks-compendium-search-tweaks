@@ -18,14 +18,18 @@ jobs:
         id: get_version
         run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
 
-      - name: Update module.json download URL
+      - name: Update module.json download URL & version
         run: |
-          jq --arg url "https://github.com/${{ github.repository }}/releases/download/${{ steps.get_version.outputs.VERSION }}/module.zip" '.download = $url' module.json > tmp.json && mv tmp.json module.json
+          VERSION="${{ steps.get_version.outputs.VERSION }}"
+          VER_NUM="${VERSION#v}"
+          jq --arg url "https://github.com/${{ github.repository }}/releases/download/${VERSION}/module.zip" \
+             --arg ver "$VER_NUM" \
+             '.download = $url | .version = $ver' module.json > tmp.json && mv tmp.json module.json
 
       - name: Create Module Archive
         run: |
           files_to_zip=""
-          for f in module.json scripts styles lang assets README.md LICENSE CHANGELOG.md; do
+          for f in module.json scripts styles lang templates assets README.md LICENSE CHANGELOG.md; do
             if [ -e "$f" ]; then
               files_to_zip="$files_to_zip $f"
             fi
