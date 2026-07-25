@@ -7,7 +7,7 @@
   "download": "https://github.com/nschoenwald/niks-compendium-search-tweaks/releases/latest/download/module.zip",
   "version": "14.0.1",
   "compatibility": {
-    "minimum": "13",
+    "minimum": "14",
     "verified": "14"
   },
   "relationships": {
