@@ -6,7 +6,6 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - **Release Workflow**: Added `templates` directory to `Create Module Archive` step in `.github/workflows/release.yml` so that `settings.hbs` template is included in released module zips.
 - **Release Workflow**: Updated workflow `jq` transformation to set both `.version` and `.download` in `module.json`.
-- **Manifest Compatibility**: Expanded minimum version compatibility in `module.json` to Foundry V13 (`minimum: 13`, `verified: 14`).
 - **Manifest Relationships**: Fixed invalid `optional` key in `relationships` schema to `recommends` for libWrapper dependency.
 
 ## [14.0.0] - 2026-07-07
