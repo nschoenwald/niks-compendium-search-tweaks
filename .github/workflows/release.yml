@@ -18,13 +18,34 @@ jobs:
         id: get_version
         run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
 
-      - name: Update module.json download URL & version
+      - name: Check tag matches module.json version
         run: |
           VERSION="${{ steps.get_version.outputs.VERSION }}"
           VER_NUM="${VERSION#v}"
+          MANIFEST_VER="$(jq -r '.version' module.json)"
+          if [ "$VER_NUM" != "$MANIFEST_VER" ]; then
+            echo "::error::Release tag ($VER_NUM) does not match module.json version ($MANIFEST_VER)."
+            exit 1
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Lint scripts
+        run: npx --yes eslint@9 scripts/
+
+      - name: Validate JSON files
+        run: |
+          jq empty module.json
+          for f in lang/*.json; do jq empty "$f"; done
+
+      - name: Update module.json download URL
+        run: |
+          VERSION="${{ steps.get_version.outputs.VERSION }}"
           jq --arg url "https://github.com/${{ github.repository }}/releases/download/${VERSION}/module.zip" \
-             --arg ver "$VER_NUM" \
-             '.download = $url | .version = $ver' module.json > tmp.json && mv tmp.json module.json
+             '.download = $url' module.json > tmp.json && mv tmp.json module.json
 
       - name: Create Module Archive
         run: |

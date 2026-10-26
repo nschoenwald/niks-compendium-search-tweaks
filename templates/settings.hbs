@@ -1,5 +1,5 @@
 <section class="ncst-settings">
-    <p class="ncst-description">{{localize "NCST.Settings.Description"}}</p>
+    <p class="ncst-description">{{localize description}}</p>
 
     <div class="ncst-toolbar">
         <div class="ncst-filter">
@@ -16,20 +16,43 @@
         </div>
     </div>
 
+    <div class="ncst-summary">
+        <span class="ncst-count"></span>
+        {{#if staleCount}}
+        <button type="button" class="ncst-stale-btn" data-action="removeStale">
+            <i class="fas fa-broom"></i> {{localize "NCST.Settings.RemoveStale" count=staleCount}}
+        </button>
+        {{/if}}
+    </div>
+
     <div class="ncst-scroll-area">
         {{#if groups.length}}
             {{#each groups}}
             <fieldset class="ncst-group">
-                <legend><i class="{{icon}}"></i> {{label}}</legend>
+                <legend>
+                    <label class="ncst-group-label">
+                        <input type="checkbox" class="ncst-group-checkbox" />
+                        <i class="{{icon}}"></i> {{label}}
+                    </label>
+                </legend>
+                {{#unless @root.personal}}
+                <label class="ncst-auto-toggle" data-tooltip="{{localize "NCST.Settings.AutoExclude.Hint"}}">
+                    <input type="checkbox" data-auto-key="{{key}}" {{#if autoExclude}}checked{{/if}} />
+                    {{localize "NCST.Settings.AutoExclude.Label"}}
+                </label>
+                {{/unless}}
                 <div class="ncst-pack-list">
                     {{#each packs}}
-                    <div class="ncst-pack-entry">
-                        <label class="ncst-pack-label">
-                            <input type="checkbox" data-pack-id="{{id}}" {{#if excluded}}checked{{/if}} />
+                    <div class="ncst-pack-entry" data-search="{{search}}">
+                        <label class="ncst-pack-label{{#if locked}} ncst-locked{{/if}}">
+                            <input type="checkbox" data-pack-id="{{id}}" {{#if excluded}}checked{{/if}} {{#if locked}}disabled{{/if}} />
                             <span class="ncst-pack-info">
                                 <span class="ncst-pack-name">{{label}}</span>
                                 {{#if folderPath}}
                                 <span class="ncst-pack-folder"><i class="fas fa-folder-open"></i> {{folderPath}}</span>
+                                {{/if}}
+                                {{#if locked}}
+                                <span class="ncst-pack-folder"><i class="fas fa-lock"></i> {{localize "NCST.Settings.LockedByGM"}}</span>
                                 {{/if}}
                             </span>
                             <span class="ncst-pack-type">{{type}}</span>

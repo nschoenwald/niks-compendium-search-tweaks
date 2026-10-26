@@ -15,6 +15,7 @@ Foundry V14 upgraded the Compendium sidebar tab's filter to search **within** ea
 This module is **system-agnostic** — it works with any game system.
 
 **Optional dependency:** [libWrapper](https://foundryvtt.com/packages/lib-wrapper) — used if available for cleaner method patching. Falls back to a direct prototype override if not installed.
+
 ---
 
 ## Features
@@ -24,17 +25,40 @@ This module is **system-agnostic** — it works with any game system.
 Configure which compendium packs are excluded from the sidebar content search via a dedicated settings form:
 
 - **Grouped pack list** — packs are organized by source (System, World, Modules) with human-readable package titles
-- **Local filter** — quickly find specific packs in long lists
-- **Bulk actions** — "Exclude All" / "Include All" buttons for fast configuration
+- **Whole-source toggle** — a checkbox on each group header excludes or includes all of its packs at once
+- **Auto-exclude new packs** — per source, automatically exclude packs that are added later (e.g. by a module update); they are picked up the next time the world loads
+- **Local filter** — quickly find packs by name, folder or source in long lists
+- **Bulk actions** — "Exclude All" / "Include All" buttons for fast configuration; they apply to the packs currently shown by the filter
+- **Counter and cleanup** — shows how many packs are excluded and lets you remove leftover exclusions for packs that are no longer installed
 - **Visual feedback** — excluded packs are dimmed with strikethrough in the settings form
 - **Non-destructive** — excluded packs remain fully visible and accessible in the sidebar when no search is active; they are only hidden from search results
+- **Full result list** — excluded packs are filtered out before the sidebar's result limit is applied, so they never crowd out results from other packs
+- **Remembers disabled modules** — exclusions for packs from modules that are currently disabled are kept when you save
+
+### Sidebar Integration
+
+- **Right-click menu** — right-click a compendium in the sidebar and choose **Exclude from Search** / **Include in Search** (GM), or **Hide from My Search** / **Show in My Search** (players)
+- **Exclusion badges** — excluded compendiums show an icon in the sidebar (a crossed-out eye for GM exclusions, a crossed-out person for personal ones)
+
+### Personal Exclusions
+
+Every user, including players, can hide additional compendiums from their own search via **Settings → Module Settings → My Search Exclusions** or the sidebar right-click menu. Personal exclusions only affect that user. Packs the GM has excluded for everyone are shown locked.
+
+### Settings
+
+| Setting | Default | Description |
+|---|---|---|
+| **Hide Excluded Packs While Searching** | On | While searching, also hide excluded compendium entries themselves, even if their name or folder matches the search. |
+| **Exclude From Other Document Lookups** | Off | Also apply exclusions to other uses of Foundry's document index, such as the link suggestions when highlighting text in a journal editor. This can also affect other modules that search the document index. |
 
 ### How to Configure
 
 1. Go to **Settings → Module Settings → Nik's Compendium Search Tweaks**
-2. Click the **Configure** button
+2. Click the **Configure** button next to **Configure Search Exclusions** (GM) or **My Search Exclusions** (everyone)
 3. Check the compendium packs you want to exclude from search
 4. Click **Save Changes**
+
+Alternatively, right-click any compendium in the sidebar.
 
 ---
 

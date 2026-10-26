@@ -2,15 +2,37 @@
   "NCST": {
     "Settings": {
       "Title": "Compendium Search Exclusions",
+      "PersonalTitle": "My Compendium Search Exclusions",
       "Description": "Check the compendium packs you want to exclude from the sidebar content search. Excluded packs will still appear in the sidebar normally, but their contents will not be included in search results.",
+      "PersonalDescription": "Check the compendium packs you want to hide from your own sidebar content search. These choices only affect you. Packs the GM has excluded for everyone are shown locked.",
       "Configure": {
         "Name": "Configure Search Exclusions",
         "Label": "Configure",
-        "Hint": "Choose which compendium packs are excluded from the sidebar content search."
+        "Hint": "Choose which compendium packs are excluded from the sidebar content search for everyone."
       },
-      "FilterPlaceholder": "Filter packs…",
+      "Personal": {
+        "Name": "My Search Exclusions",
+        "Hint": "Choose additional compendium packs to hide from your own sidebar content search."
+      },
+      "HidePackEntries": {
+        "Name": "Hide Excluded Packs While Searching",
+        "Hint": "While a sidebar search is active, also hide the entries of excluded packs themselves, even if their name or folder matches the search."
+      },
+      "AllLookups": {
+        "Name": "Exclude From Other Document Lookups",
+        "Hint": "Also apply exclusions to every other use of Foundry's document index, such as the link suggestions shown when highlighting text in a journal editor. This can also affect other modules that search the document index."
+      },
+      "AutoExclude": {
+        "Label": "Automatically exclude new packs from this source",
+        "Hint": "Packs added later by this system, module or world (for example by a module update) are excluded automatically the next time the world loads."
+      },
+      "FilterPlaceholder": "Filter packs, folders or sources…",
       "ExcludeAll": "Exclude All",
       "IncludeAll": "Include All",
+      "Count": "{excluded} of {total} packs excluded",
+      "RemoveStale": "Remove {count} exclusion(s) for uninstalled packs",
+      "StaleRemoved": "Exclusions for uninstalled packs will be removed on save.",
+      "LockedByGM": "Excluded by the GM",
       "Save": "Save Changes",
       "Saved": "Compendium search exclusions saved.",
       "Group": {
@@ -19,6 +41,17 @@
         "World": "World Compendiums"
       },
       "NoPacks": "No compendium packs are currently available."
-    }
+    },
+    "Context": {
+      "Exclude": "Exclude from Search",
+      "Include": "Include in Search",
+      "ExcludePersonal": "Hide from My Search",
+      "IncludePersonal": "Show in My Search"
+    },
+    "Badge": {
+      "World": "Excluded from search",
+      "Personal": "Hidden from your search"
+    },
+    "AutoExcluded": "Compendium Search Tweaks: automatically excluded {count} new compendium pack(s) from search."
   }
 }
