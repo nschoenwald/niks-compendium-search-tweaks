@@ -1,0 +1,57 @@
+{
+  "NCST": {
+    "Settings": {
+      "Title": "Exclusions de recherche des compendiums",
+      "PersonalTitle": "Mes exclusions de recherche des compendiums",
+      "Description": "Cochez les compendiums à exclure de la recherche de contenu de la barre latérale. Les compendiums exclus apparaissent toujours normalement dans la barre latérale, mais leur contenu n'est pas inclus dans les résultats de recherche.",
+      "PersonalDescription": "Cochez les compendiums à masquer dans votre propre recherche de contenu de la barre latérale. Ces choix ne concernent que vous. Les compendiums exclus pour tous par le MJ sont affichés verrouillés.",
+      "Configure": {
+        "Name": "Configurer les exclusions de recherche",
+        "Label": "Configurer",
+        "Hint": "Choisissez quels compendiums sont exclus de la recherche de contenu de la barre latérale pour tout le monde."
+      },
+      "Personal": {
+        "Name": "Mes exclusions de recherche",
+        "Hint": "Choisissez des compendiums supplémentaires à masquer dans votre propre recherche de contenu de la barre latérale."
+      },
+      "HidePackEntries": {
+        "Name": "Masquer les compendiums exclus pendant la recherche",
+        "Hint": "Pendant une recherche dans la barre latérale, masque aussi les entrées des compendiums exclus eux-mêmes, même si leur nom ou leur dossier correspond à la recherche."
+      },
+      "AllLookups": {
+        "Name": "Exclure des autres recherches de documents",
+        "Hint": "Applique aussi les exclusions à toutes les autres utilisations de l'index de documents de Foundry, comme les suggestions de liens affichées en surlignant du texte dans l'éditeur de journal. Cela peut aussi affecter d'autres modules qui interrogent l'index de documents."
+      },
+      "AutoExclude": {
+        "Label": "Exclure automatiquement les nouveaux compendiums de cette source",
+        "Hint": "Les compendiums ajoutés plus tard par ce système, ce module ou ce monde (par exemple lors d'une mise à jour de module) sont exclus automatiquement au prochain chargement du monde."
+      },
+      "FilterPlaceholder": "Filtrer les compendiums, dossiers ou sources…",
+      "ExcludeAll": "Tout exclure",
+      "IncludeAll": "Tout inclure",
+      "Count": "{excluded} compendium(s) exclu(s) sur {total}",
+      "RemoveStale": "Supprimer {count} exclusion(s) de compendiums désinstallés",
+      "StaleRemoved": "Les exclusions de compendiums désinstallés seront supprimées à l'enregistrement.",
+      "LockedByGM": "Exclu par le MJ",
+      "Save": "Enregistrer les modifications",
+      "Saved": "Exclusions de recherche des compendiums enregistrées.",
+      "Group": {
+        "System": "Système",
+        "Module": "Module",
+        "World": "Compendiums du monde"
+      },
+      "NoPacks": "Aucun compendium n'est disponible actuellement."
+    },
+    "Context": {
+      "Exclude": "Exclure de la recherche",
+      "Include": "Inclure dans la recherche",
+      "ExcludePersonal": "Masquer de ma recherche",
+      "IncludePersonal": "Afficher dans ma recherche"
+    },
+    "Badge": {
+      "World": "Exclu de la recherche",
+      "Personal": "Masqué de votre recherche"
+    },
+    "AutoExcluded": "Compendium Search Tweaks : {count} nouveau(x) compendium(s) exclu(s) automatiquement de la recherche."
+  }
+}

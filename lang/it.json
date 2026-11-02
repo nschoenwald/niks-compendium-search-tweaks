@@ -1,0 +1,57 @@
+{
+  "NCST": {
+    "Settings": {
+      "Title": "Esclusioni dalla ricerca nei compendi",
+      "PersonalTitle": "Le mie esclusioni dalla ricerca nei compendi",
+      "Description": "Seleziona i compendi da escludere dalla ricerca dei contenuti nella barra laterale. I compendi esclusi continuano ad apparire normalmente nella barra laterale, ma il loro contenuto non compare nei risultati di ricerca.",
+      "PersonalDescription": "Seleziona i compendi da nascondere nella tua ricerca dei contenuti nella barra laterale. Queste scelte riguardano solo te. I compendi esclusi per tutti dal GM sono mostrati come bloccati.",
+      "Configure": {
+        "Name": "Configura esclusioni dalla ricerca",
+        "Label": "Configura",
+        "Hint": "Scegli quali compendi sono esclusi dalla ricerca dei contenuti nella barra laterale per tutti."
+      },
+      "Personal": {
+        "Name": "Le mie esclusioni dalla ricerca",
+        "Hint": "Scegli altri compendi da nascondere nella tua ricerca dei contenuti nella barra laterale."
+      },
+      "HidePackEntries": {
+        "Name": "Nascondi i compendi esclusi durante la ricerca",
+        "Hint": "Durante una ricerca nella barra laterale, nasconde anche le voci dei compendi esclusi, anche se il loro nome o la loro cartella corrisponde alla ricerca."
+      },
+      "AllLookups": {
+        "Name": "Escludi dalle altre ricerche di documenti",
+        "Hint": "Applica le esclusioni anche a ogni altro uso dell'indice dei documenti di Foundry, come i suggerimenti di link mostrati evidenziando il testo nell'editor del diario. Può riguardare anche altri moduli che cercano nell'indice dei documenti."
+      },
+      "AutoExclude": {
+        "Label": "Escludi automaticamente i nuovi compendi di questa fonte",
+        "Hint": "I compendi aggiunti in seguito da questo sistema, modulo o mondo (ad esempio con un aggiornamento del modulo) vengono esclusi automaticamente al successivo caricamento del mondo."
+      },
+      "FilterPlaceholder": "Filtra compendi, cartelle o fonti…",
+      "ExcludeAll": "Escludi tutti",
+      "IncludeAll": "Includi tutti",
+      "Count": "{excluded} compendi esclusi su {total}",
+      "RemoveStale": "Rimuovi {count} esclusione/i per compendi disinstallati",
+      "StaleRemoved": "Le esclusioni per i compendi disinstallati verranno rimosse al salvataggio.",
+      "LockedByGM": "Escluso dal GM",
+      "Save": "Salva modifiche",
+      "Saved": "Esclusioni dalla ricerca nei compendi salvate.",
+      "Group": {
+        "System": "Sistema",
+        "Module": "Modulo",
+        "World": "Compendi del mondo"
+      },
+      "NoPacks": "Al momento non è disponibile alcun compendio."
+    },
+    "Context": {
+      "Exclude": "Escludi dalla ricerca",
+      "Include": "Includi nella ricerca",
+      "ExcludePersonal": "Nascondi dalla mia ricerca",
+      "IncludePersonal": "Mostra nella mia ricerca"
+    },
+    "Badge": {
+      "World": "Escluso dalla ricerca",
+      "Personal": "Nascosto dalla tua ricerca"
+    },
+    "AutoExcluded": "Compendium Search Tweaks: {count} nuovo/i compendio/i escluso/i automaticamente dalla ricerca."
+  }
+}

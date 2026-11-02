@@ -1,0 +1,57 @@
+{
+  "NCST": {
+    "Settings": {
+      "Title": "Exclusões da busca em compêndios",
+      "PersonalTitle": "Minhas exclusões da busca em compêndios",
+      "Description": "Marque os compêndios que deseja excluir da busca de conteúdo da barra lateral. Compêndios excluídos continuam aparecendo normalmente na barra lateral, mas seu conteúdo não entra nos resultados da busca.",
+      "PersonalDescription": "Marque os compêndios que deseja ocultar da sua própria busca de conteúdo da barra lateral. Essas escolhas só afetam você. Compêndios que o mestre excluiu para todos aparecem bloqueados.",
+      "Configure": {
+        "Name": "Configurar exclusões da busca",
+        "Label": "Configurar",
+        "Hint": "Escolha quais compêndios ficam excluídos da busca de conteúdo da barra lateral para todos."
+      },
+      "Personal": {
+        "Name": "Minhas exclusões da busca",
+        "Hint": "Escolha compêndios adicionais para ocultar da sua própria busca de conteúdo da barra lateral."
+      },
+      "HidePackEntries": {
+        "Name": "Ocultar compêndios excluídos durante a busca",
+        "Hint": "Enquanto houver uma busca ativa na barra lateral, oculta também as entradas dos próprios compêndios excluídos, mesmo que o nome ou a pasta corresponda à busca."
+      },
+      "AllLookups": {
+        "Name": "Excluir de outras consultas de documentos",
+        "Hint": "Aplica as exclusões também a qualquer outro uso do índice de documentos do Foundry, como as sugestões de link exibidas ao destacar texto no editor de diário. Isso também pode afetar outros módulos que pesquisam o índice de documentos."
+      },
+      "AutoExclude": {
+        "Label": "Excluir automaticamente novos compêndios desta fonte",
+        "Hint": "Compêndios adicionados depois por este sistema, módulo ou mundo (por exemplo, por uma atualização de módulo) são excluídos automaticamente na próxima vez que o mundo carregar."
+      },
+      "FilterPlaceholder": "Filtrar compêndios, pastas ou fontes…",
+      "ExcludeAll": "Excluir todos",
+      "IncludeAll": "Incluir todos",
+      "Count": "{excluded} de {total} compêndios excluídos",
+      "RemoveStale": "Remover {count} exclusão(ões) de compêndios desinstalados",
+      "StaleRemoved": "As exclusões de compêndios desinstalados serão removidas ao salvar.",
+      "LockedByGM": "Excluído pelo mestre",
+      "Save": "Salvar alterações",
+      "Saved": "Exclusões da busca em compêndios salvas.",
+      "Group": {
+        "System": "Sistema",
+        "Module": "Módulo",
+        "World": "Compêndios do mundo"
+      },
+      "NoPacks": "Nenhum compêndio disponível no momento."
+    },
+    "Context": {
+      "Exclude": "Excluir da busca",
+      "Include": "Incluir na busca",
+      "ExcludePersonal": "Ocultar da minha busca",
+      "IncludePersonal": "Mostrar na minha busca"
+    },
+    "Badge": {
+      "World": "Excluído da busca",
+      "Personal": "Oculto da sua busca"
+    },
+    "AutoExcluded": "Compendium Search Tweaks: {count} novo(s) compêndio(s) excluído(s) automaticamente da busca."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "NCST": {
+    "Settings": {
+      "Title": "Kompendium-Suchausschlüsse",
+      "PersonalTitle": "Meine Kompendium-Suchausschlüsse",
+      "Description": "Markiere die Kompendien, die von der Inhaltssuche der Seitenleiste ausgeschlossen werden sollen. Ausgeschlossene Kompendien erscheinen weiterhin normal in der Seitenleiste, ihr Inhalt taucht aber nicht in den Suchergebnissen auf.",
+      "PersonalDescription": "Markiere die Kompendien, die du in deiner eigenen Inhaltssuche der Seitenleiste ausblenden willst. Diese Auswahl betrifft nur dich. Kompendien, die die SL für alle ausgeschlossen hat, werden gesperrt angezeigt.",
+      "Configure": {
+        "Name": "Suchausschlüsse konfigurieren",
+        "Label": "Konfigurieren",
+        "Hint": "Lege fest, welche Kompendien für alle von der Inhaltssuche der Seitenleiste ausgeschlossen sind."
+      },
+      "Personal": {
+        "Name": "Meine Suchausschlüsse",
+        "Hint": "Wähle zusätzliche Kompendien, die in deiner eigenen Inhaltssuche der Seitenleiste ausgeblendet werden."
+      },
+      "HidePackEntries": {
+        "Name": "Ausgeschlossene Kompendien beim Suchen ausblenden",
+        "Hint": "Blendet während einer aktiven Suche in der Seitenleiste auch die Einträge der ausgeschlossenen Kompendien selbst aus, selbst wenn ihr Name oder Ordner zur Suche passt."
+      },
+      "AllLookups": {
+        "Name": "Auch von anderen Dokumentsuchen ausschließen",
+        "Hint": "Wendet die Ausschlüsse auch auf jede andere Nutzung des Dokumentindex von Foundry an, etwa auf die Linkvorschläge beim Markieren von Text im Journal-Editor. Das kann auch andere Module betreffen, die den Dokumentindex durchsuchen."
+      },
+      "AutoExclude": {
+        "Label": "Neue Kompendien dieser Quelle automatisch ausschließen",
+        "Hint": "Kompendien, die dieses System, Modul oder diese Welt später hinzufügt (z. B. durch ein Modul-Update), werden beim nächsten Laden der Welt automatisch ausgeschlossen."
+      },
+      "FilterPlaceholder": "Kompendien, Ordner oder Quellen filtern…",
+      "ExcludeAll": "Alle ausschließen",
+      "IncludeAll": "Alle einschließen",
+      "Count": "{excluded} von {total} Kompendien ausgeschlossen",
+      "RemoveStale": "{count} Ausschluss/Ausschlüsse für deinstallierte Kompendien entfernen",
+      "StaleRemoved": "Ausschlüsse für deinstallierte Kompendien werden beim Speichern entfernt.",
+      "LockedByGM": "Von der SL ausgeschlossen",
+      "Save": "Änderungen speichern",
+      "Saved": "Kompendium-Suchausschlüsse gespeichert.",
+      "Group": {
+        "System": "System",
+        "Module": "Modul",
+        "World": "Welt-Kompendien"
+      },
+      "NoPacks": "Derzeit sind keine Kompendien verfügbar."
+    },
+    "Context": {
+      "Exclude": "Von der Suche ausschließen",
+      "Include": "In die Suche einschließen",
+      "ExcludePersonal": "In meiner Suche ausblenden",
+      "IncludePersonal": "In meiner Suche anzeigen"
+    },
+    "Badge": {
+      "World": "Von der Suche ausgeschlossen",
+      "Personal": "In deiner Suche ausgeblendet"
+    },
+    "AutoExcluded": "Compendium Search Tweaks: {count} neue(s) Kompendium/Kompendien automatisch von der Suche ausgeschlossen."
+  }
+}

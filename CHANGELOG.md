@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [14.2.0] - 2026-11-02
+### Added
+- The module is now available in German, French, Spanish, Italian, Brazilian Portuguese, Japanese, Polish and Czech.
+
 ## [14.1.0] - 2026-10-26
 ### Added
 - **Right-click to exclude**: Right-click a compendium in the sidebar to exclude it from search (or include it again) without opening the settings.

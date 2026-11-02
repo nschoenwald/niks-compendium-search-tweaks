@@ -1,0 +1,57 @@
+{
+  "NCST": {
+    "Settings": {
+      "Title": "Vyloučení z hledání v kompendiích",
+      "PersonalTitle": "Moje vyloučení z hledání v kompendiích",
+      "Description": "Zaškrtněte kompendia, která chcete vyloučit z hledání obsahu v postranním panelu. Vyloučená kompendia se v postranním panelu dál normálně zobrazují, ale jejich obsah se nezahrne do výsledků hledání.",
+      "PersonalDescription": "Zaškrtněte kompendia, která chcete skrýt ve svém vlastním hledání obsahu v postranním panelu. Tato volba se týká jen vás. Kompendia, která PJ vyloučil pro všechny, se zobrazují jako uzamčená.",
+      "Configure": {
+        "Name": "Nastavit vyloučení z hledání",
+        "Label": "Nastavit",
+        "Hint": "Vyberte, která kompendia jsou pro všechny vyloučena z hledání obsahu v postranním panelu."
+      },
+      "Personal": {
+        "Name": "Moje vyloučení z hledání",
+        "Hint": "Vyberte další kompendia, která se mají skrýt ve vašem vlastním hledání obsahu v postranním panelu."
+      },
+      "HidePackEntries": {
+        "Name": "Při hledání skrýt vyloučená kompendia",
+        "Hint": "Během aktivního hledání v postranním panelu skryje i položky samotných vyloučených kompendií, i když jejich název nebo složka odpovídá hledání."
+      },
+      "AllLookups": {
+        "Name": "Vyloučit i z jiných vyhledávání dokumentů",
+        "Hint": "Použije vyloučení i na každé jiné využití indexu dokumentů Foundry, například na návrhy odkazů zobrazené při označení textu v editoru deníku. Může to ovlivnit i jiné moduly, které prohledávají index dokumentů."
+      },
+      "AutoExclude": {
+        "Label": "Automaticky vyloučit nová kompendia z tohoto zdroje",
+        "Hint": "Kompendia, která tento systém, modul nebo svět přidá později (např. aktualizací modulu), se automaticky vyloučí při příštím načtení světa."
+      },
+      "FilterPlaceholder": "Filtrovat kompendia, složky nebo zdroje…",
+      "ExcludeAll": "Vyloučit vše",
+      "IncludeAll": "Zahrnout vše",
+      "Count": "Vyloučeno {excluded} z {total} kompendií",
+      "RemoveStale": "Odebrat vyloučení odinstalovaných kompendií ({count})",
+      "StaleRemoved": "Vyloučení odinstalovaných kompendií se při uložení odeberou.",
+      "LockedByGM": "Vyloučeno PJ",
+      "Save": "Uložit změny",
+      "Saved": "Vyloučení z hledání v kompendiích uložena.",
+      "Group": {
+        "System": "Systém",
+        "Module": "Modul",
+        "World": "Kompendia světa"
+      },
+      "NoPacks": "Momentálně nejsou k dispozici žádná kompendia."
+    },
+    "Context": {
+      "Exclude": "Vyloučit z hledání",
+      "Include": "Zahrnout do hledání",
+      "ExcludePersonal": "Skrýt v mém hledání",
+      "IncludePersonal": "Zobrazit v mém hledání"
+    },
+    "Badge": {
+      "World": "Vyloučeno z hledání",
+      "Personal": "Skryto ve vašem hledání"
+    },
+    "AutoExcluded": "Compendium Search Tweaks: nová kompendia ({count}) byla automaticky vyloučena z hledání."
+  }
+}
