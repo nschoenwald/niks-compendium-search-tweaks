@@ -64,7 +64,7 @@ Alternatively, right-click any compendium in the sidebar.
 
 ## Languages
 
-🇬🇧 English · 🇩🇪 Deutsch
+🇬🇧 English · 🇩🇪 Deutsch · 🇫🇷 Français (thanks Kameleau)
 
 Translations into other languages by native speakers are welcome as an issue or pull request.
 
